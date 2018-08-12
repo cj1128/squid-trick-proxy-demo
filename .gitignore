@@ -1,0 +1,6 @@
+access.log
+cache.log
+cache/*
+!cache/.gitkeep
+rewrite
+rewrite.log
