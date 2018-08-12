@@ -31,7 +31,14 @@
     $ squid -N -f squid.conf
     ```
 
-4. 安装[Proxy SwitchyOmega]，配置使用代理，协议选择`HTTP`，Server填写`127.0.0.1`，端口填写`3128`
+4. 启动一个服务器返回翻转以后的图片，这里我们选择使用`http-server`
+
+    ```bash
+    $ yan global add http-server
+    $ http-server -c-1 cache
+    ```
+
+5. 安装[Proxy SwitchyOmega]，配置使用代理，协议选择`HTTP`，Server填写`127.0.0.1`，端口填写`3128`
 
 访问任意含有图片的HTTP站点，比如[百度图片搜索]，Enjoy~ 😉。
 
